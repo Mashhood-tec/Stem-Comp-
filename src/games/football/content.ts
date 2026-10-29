@@ -1,0 +1,118 @@
+import { definePrepared } from '../prepared';
+
+export const FOOTBALL_POINTS = { Easy: 1, Medium: 1, Hard: 1 } as const;
+
+export const footballMissions = definePrepared('football', 'fb', FOOTBALL_POINTS, [
+  {
+    title: 'Pass Master',
+    category: 'Team Mission',
+    instruction: 'Complete five passes in a row between your own players before attempting a shot.',
+    successCriteria: 'The host counts five passes without the other team touching the ball, followed by a shot.',
+    difficulty: 'Medium',
+  },
+  {
+    title: 'Everyone Touches',
+    category: 'Team Mission',
+    instruction: 'Every player on your team must touch the ball during one attack before you shoot.',
+    successCriteria: 'All team members touch the ball in the same attack, then the team takes a shot.',
+    difficulty: 'Hard',
+  },
+  {
+    title: 'Fair Play Champions',
+    category: 'Fair Play',
+    instruction: 'Show great sportsmanship: help up anyone who falls and shake hands after every goal.',
+    successCriteria: 'The host sees at least one helping hand and handshakes after goals, with no arguing.',
+    difficulty: 'Easy',
+  },
+  {
+    title: 'Target Shot',
+    category: 'Skill Challenge',
+    instruction: 'Nominate one player to aim a shot at a corner of the goal marked by a cone or bag.',
+    successCriteria: 'The shot passes between the post and the marker, whether or not it is saved.',
+    difficulty: 'Medium',
+  },
+  {
+    title: 'Weaker Foot Wonder',
+    category: 'Skill Challenge',
+    instruction: 'Score or hit the target with your weaker foot. Tell the host which foot is your weaker one first.',
+    successCriteria: 'A player shoots on target using the foot they announced as their weaker foot.',
+    difficulty: 'Hard',
+  },
+  {
+    title: 'Silent Signals',
+    category: 'Tactics',
+    instruction: 'For the next two minutes, your team may only communicate with hand signals and claps. No talking!',
+    successCriteria: 'The team plays two minutes without calling out words to each other.',
+    difficulty: 'Medium',
+  },
+  {
+    title: 'One-Two Magic',
+    category: 'Skill Challenge',
+    instruction: 'Pull off a "one-two": pass to a teammate, run forward, and receive the ball straight back.',
+    successCriteria: 'The host sees a pass and an immediate return pass to the same player who moved forward.',
+    difficulty: 'Medium',
+  },
+  {
+    title: 'Falcon Celebration',
+    category: 'Celebration',
+    instruction: 'Invent a team goal celebration inspired by a soaring falcon and perform it after your next goal.',
+    successCriteria: 'After scoring, the whole team performs the same celebration together.',
+    difficulty: 'Easy',
+  },
+  {
+    title: 'Wall of Defenders',
+    category: 'Tactics',
+    instruction: 'Defend as a team: do not let the other side take a shot for the next two minutes.',
+    successCriteria: 'The other team takes no shot on goal during the two minutes the host times.',
+    difficulty: 'Hard',
+  },
+  {
+    title: 'Keepy-Uppy Break',
+    category: 'Skill Challenge',
+    instruction: 'At the next stoppage, one player juggles the ball five times using feet, knees or thighs.',
+    successCriteria: 'Five touches in a row without the ball hitting the ground and no hands used.',
+    difficulty: 'Medium',
+  },
+  {
+    title: 'Generation Assist',
+    category: 'Team Mission',
+    instruction: 'Create a goal or shot where an older player passes to a younger player who then shoots.',
+    successCriteria: 'The final pass comes from an older family member to a younger one who takes the shot.',
+    difficulty: 'Easy',
+  },
+  {
+    title: 'Captain\'s Cheer',
+    category: 'Fair Play',
+    instruction: 'Your captain must cheer for a great move made by the other team at least once this period.',
+    successCriteria: 'The host hears the captain clearly praise a move by the opposing team.',
+    difficulty: 'Easy',
+  },
+  {
+    title: 'Long-Range Effort',
+    category: 'Skill Challenge',
+    instruction: 'Take a shot from behind a line the host marks halfway between the goal and the centre.',
+    successCriteria: 'A shot is taken from behind the marked line and travels towards the goal.',
+    difficulty: 'Medium',
+  },
+  {
+    title: 'Keeper Swap',
+    category: 'Tactics',
+    instruction: 'Switch goalkeepers. The new keeper must make one save or catch before the period ends.',
+    successCriteria: 'A different player is in goal and makes at least one save or clean catch.',
+    difficulty: 'Medium',
+  },
+  {
+    title: 'Dribble Dash',
+    category: 'Skill Challenge',
+    instruction: 'Dribble the ball past one opponent and keep control for three more touches.',
+    successCriteria: 'The player beats an opponent fairly and keeps the ball for three touches.',
+    difficulty: 'Hard',
+  },
+  {
+    title: 'Quiet Restart',
+    category: 'Fair Play',
+    instruction: 'Whenever the ball goes out, your team returns it to the other side quickly and kindly.',
+    successCriteria: 'For the period, every out-of-play ball is handed or passed back without delay.',
+    difficulty: 'Easy',
+  },
+]);

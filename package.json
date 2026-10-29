@@ -1,0 +1,28 @@
+{
+  "name": "family-ai-game-day",
+  "private": true,
+  "version": "1.0.0",
+  "type": "module",
+  "description": "Family AI Game Day — five family games powered by AI-created content, hosted by a human.",
+  "scripts": {
+    "dev": "vite",
+    "typecheck": "tsc -p tsconfig.json --noEmit && tsc -p tsconfig.node.json --noEmit",
+    "build": "npm run typecheck && vite build",
+    "preview": "vite preview",
+    "start": "npm run build && vite preview"
+  },
+  "dependencies": {
+    "@fontsource-variable/inter": "^5.3.0",
+    "lucide-react": "^1.64.0",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1"
+  },
+  "devDependencies": {
+    "@types/node": "^22.20.5",
+    "@types/react": "^18.3.31",
+    "@types/react-dom": "^18.3.7",
+    "@vitejs/plugin-react": "^4.7.0",
+    "typescript": "^5.9.3",
+    "vite": "^6.4.5"
+  }
+}
